@@ -1,0 +1,111 @@
+@import url('./section/header.css');
+@import url('./section/visual.css');
+@import url('./section/notice.css');
+@import url('./section/rewards.css');
+@import url('./section/youtube.css');
+@import url('./section/storeproduct.css');
+@import url('./section/reserveCoffee.css');
+@import url('./section/pickYourFavorite.css');
+@import url('./section/reserveStore.css');
+@import url('./section/findStore.css');
+@import url('./section/awards.css');
+@import url('./section/footer.css');
+
+/* COMMON */
+body {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+img {
+    /* inline은 text와 같은 취급으로 베이스라인이 생긴다
+    그렇게 되면 아래에 약간의 공간이 생기므로
+    Img는 글자가 아닌 레이아웃의 일종으로 하기로하여 block으로 지정 */
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.btn {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+}
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+.btn.btn--reverse {
+    background-color: #333;
+    color: #fff;
+}
+.btn.btn--reverse:hover {
+    background-color: transparent;
+    color: #333;
+}
+.btn.btn--brown {
+    color: #592b18;
+    border-color: #592b18;
+}
+.btn.btn--brown:hover {
+    color: #fff;
+    background-color: #592b18;
+}
+.btn.btn--gold {
+    color: #d9aa8a;
+    border-color: #d9aa8a;
+}
+.btn.btn--gold:hover {
+    color: #fff;
+    border-color: #d9aa8a;
+}
+.btn.btn--white {
+    color: #fff;
+    border-color: #fff;
+}
+.btn.btn--white:hover {
+    color: #333;
+    background-color: #fff;
+}
+.back-to-position {
+    opacity: 0;
+    transition: 1s;
+}
+.back-to-position.to-right {
+    transform: translateX(-150px);
+}
+.back-to-position.to-left {
+    transform: translateX(150px);
+}
+.show .back-to-position {
+    opacity: 1;
+    transform: translateX(0);
+}
+.show .back-to-position.delay-0 {
+    transition-delay: 0s;
+}
+.show .back-to-position.delay-1 {
+    transition-delay: .3s;
+}
+.show .back-to-position.delay-2 {
+    transition-delay: .6s;
+}
+.show .back-to-position.delay-3 {
+    transition-delay: .9s;
+}
